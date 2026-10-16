@@ -1,0 +1,11 @@
+{
+	"provideLibs": [	
+		    "libdummy_binary_libwuffs-mirror-release-c.a-x86_64-v2.so",
+		    "libdummy_binary_libwuffs-mirror-release-c.a.so",
+		    "libdummy_headers_wuffs_mirror_release_c-x86_64-v2.so",
+		    "libdummy_headers_wuffs_mirror_release_c.so",
+		    "libdummy_wuffs_mirror_release_c_dev-x86_64-v2.so",
+		    "libdummy_wuffs_mirror_release_c_dev.so"
+	],
+	"visible": true
+}

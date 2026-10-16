@@ -1,0 +1,41 @@
+package {
+    default_applicable_licenses: ["external_wuffs-mirror-release-c_license"],
+}
+
+license {
+    name: "external_wuffs-mirror-release-c_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+prebuilt_apex {
+    name: "org.blisslabs.ag.wuffs.mirror.release.c",
+    apex_name: "org.blisslabs.ag.wuffs.mirror.release.c",
+    source_apex_name: "org.blisslabs.ag.wuffs.mirror.release.c",
+    arch: {
+        x86_64: {
+            src: "org.blisslabs.ag.wuffs.mirror.release.c.apex",
+        },
+    },
+    filename: "org.blisslabs.ag.wuffs.mirror.release.c.apex",
+    prefer: true,
+    installable: true,
+}
+
+cc_prebuilt_library_static {
+    name: "libwuffs_mirror_release_c",
+    host_supported: true,
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    export_include_dirs: [
+        "dev-src/release/c",
+        "dev-src/include/release/c",
+    ],
+    srcs: ["dev-src/lib/libwuffs_mirror_release_c.a"],
+}

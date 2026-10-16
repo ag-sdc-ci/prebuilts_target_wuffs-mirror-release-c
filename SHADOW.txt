@@ -1,0 +1,6 @@
+shadow prebuilt repo: wuffs-mirror-release-c (target)
+  upstream: external/wuffs-mirror-release-c
+  api-level: 32 (branch 32-20261016)
+  blobs: org.blisslabs.ag.wuffs.mirror.release.c.apex org.blisslabs.ag.wuffs.mirror.release.c.dev.apex org.blisslabs.ag.wuffs.mirror.release.c.doc.apex
+  dev-src: extracted dev payload + release/c headers + root Android.bp
+  date: 2026-10-16
