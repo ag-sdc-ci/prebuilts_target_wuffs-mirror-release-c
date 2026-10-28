@@ -35,7 +35,7 @@ cc_prebuilt_library_static {
     recovery_available: true,
     export_include_dirs: [
         "dev-src/release/c",
-        "dev-src/include/release/c",
+        "include/release/c",
     ],
-    srcs: ["dev-src/lib/libwuffs_mirror_release_c.a"],
+    srcs: ["lib64/libwuffs_mirror_release_c.a"],
 }
